@@ -27,7 +27,7 @@ const MainPage = () => {
         },
         {
           title: 'Birthday',
-          dataIndex: 'address',
+          dataIndex: 'birthday',
           key: 'birthday',
           ellipsis: true,
         },
@@ -57,21 +57,18 @@ const MainPage = () => {
           name: 'John Brown',
           age: 32,
           address: 'New York No. 1 Lake Park, New York No. 1 Lake Park',
-          tags: ['nice', 'developer'],
         },
         {
           key: '2',
           name: 'Jim Green',
           age: 42,
           address: 'London No. 2 Lake Park, London No. 2 Lake Park',
-          tags: ['loser'],
         },
         {
           key: '3',
           name: 'Joe Black',
           age: 32,
           address: 'Sydney No. 1 Lake Park, Sydney No. 1 Lake Park',
-          tags: ['cool', 'teacher'],
         },
     ];
 
