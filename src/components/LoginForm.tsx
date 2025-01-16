@@ -18,10 +18,6 @@ const LoginForm:FC = () => {
             navigate(0);
         }
     };
-    
-    const onFinishFailed: FormProps<FieldType>['onFinishFailed'] = (errorInfo) => {
-        console.log('Failed:', errorInfo);
-    };
 
     return (
         <Form
@@ -29,7 +25,6 @@ const LoginForm:FC = () => {
             layout="vertical"
             initialValues={{ remember: true }}
             onFinish={onFinish}
-            onFinishFailed={onFinishFailed}
             autoComplete="off"
         >
             <Form.Item<FieldType>
