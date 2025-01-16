@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import { Layout, Menu, theme } from 'antd';
 import { Content, Footer, Header } from 'antd/es/layout/layout';
@@ -6,7 +7,7 @@ import { logout } from '@/utils/auth';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
-const MainLayout = () => {
+const MainLayout:FC<{ isAuthUser: boolean }> = ({ isAuthUser }) => {
     const navigate = useNavigate();
     const {
         token: { colorBgContainer, borderRadiusLG },
@@ -15,8 +16,8 @@ const MainLayout = () => {
     const items: MenuItem[] = [
         { 
             key: 1, 
-            label: (
-                <a 
+            label: 
+                isAuthUser && (<a 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     onClick={() => {
@@ -25,8 +26,8 @@ const MainLayout = () => {
                     }}
                 >
                     Exit
-                </a>
-            ),
+                </a>)
+            ,
         }
     ];
 

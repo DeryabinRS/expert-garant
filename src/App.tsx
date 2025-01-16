@@ -13,13 +13,12 @@ const App = () => {
     const [ isAuthUser, setIsAuthUser ] = useState<boolean>(false);
 
     useEffect(() => {
-        console.log(getAuthUser())
         setIsAuthUser(getAuthUser());
-    }, [isAuthUser])
+    }, [isAuthUser]);
 
     return (
         <Routes>
-            <Route path="/" element={<MainLayout />}>
+            <Route path="/" element={<MainLayout isAuthUser={isAuthUser} />}>
                 <Route index element={ isAuthUser ? <MainPage /> : <LoginPage /> } />
             </Route>
         </Routes>
