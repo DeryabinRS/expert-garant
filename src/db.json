@@ -1,0 +1,52 @@
+[
+    {
+      "id":1,
+      "name":"Дерябин Роман",
+      "age":38,
+      "city":"Tomsk",
+      "birthday":"01.01.1986",
+      "salary":2000,
+      "dateStart":"01.01.2019",
+      "dateEnd":null
+    },
+    {
+      "id":2,
+      "name":"John Doe",
+      "age":29,
+      "city":"New York",
+      "birthday":"23.01.1995",
+      "salary":5000,
+      "dateStart":"01.01.2020",
+      "dateEnd":"01.01.2020"
+    },
+    {
+      "id":3,
+      "name":"Jim Burton",
+      "age":26,
+      "city":"Los Angeles",
+      "birthday":"13.06.1998",
+      "salary":4000,
+      "dateStart":"01.01.2024",
+      "dateEnd":"01.01.2024"
+    },
+    {
+      "id":4,
+      "name":"Garald Black",
+      "age":35,
+      "city":"Las Vegas",
+      "birthday":"13.07.1989",
+      "salary":6000,
+      "dateStart":"01.01.2025",
+      "dateEnd":null
+    },
+    {
+      "id":5,
+      "name":"Ivan Ivanov",
+      "age":36,
+      "city":"Moskow",
+      "birthday":"13.04.1988",
+      "salary":6000,
+      "dateStart":"01.01.2025",
+      "dateEnd":null
+    }
+]
