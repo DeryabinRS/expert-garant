@@ -24,18 +24,17 @@ const { RangePicker } = DatePicker;
 
 const MainPage = () => {
 	const [ period, setPeriod ] = useState<string[]>();
-	const [ dataSource, setDataSource ] = useState<any>([]);
+	const [ dataSource, setDataSource ] = useState<DataType[]>([]);
 
 	const onChangePeriodDate = (_: Dayjs | (Dayjs | null)[] | null, dateString: string[]) => {
 		setPeriod(dateString);
 	};
 
 	const handleGetResponse = () => {
-		console.log(period);
 		const dataSource = db.map(item => ({...item, key: item.id.toString()})).filter(item => {
 			if(period && Array.isArray(period)) {
-				const dateStart = new Date(period[0]);
-				const dateEnd = new Date(period[1]);
+				const dateStart = period[0];
+				const dateEnd = period[1];
 
 				if (dateStart && dateEnd) {
 					if (dayjs(dateStart) >= dayjs(item.dateStart)) {
