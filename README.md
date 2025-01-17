@@ -4,4 +4,7 @@
 2. npm run dev
 
 the application will be launched on port 4000
+
+email: test@test.ru
+password: test
 ```
